@@ -5,6 +5,7 @@ jobs:
             - image: python:3.6
     steps:
       - checkout
+      - python test.py
       - run: echo "hello world"
 workflows:
   version: 2
